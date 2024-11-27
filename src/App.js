@@ -1,5 +1,6 @@
 import './App.css';
-import HelloWorld from './components/HelloWorld.js'
+import PessoaSimples from './components/entidade/PessoaComChamadaSimples.js'
+import PessoaComplexa from './components/entidade/PessoaComChamadaMaisDetalhada.js'
 
 function App() {
 
@@ -10,26 +11,25 @@ function App() {
   const oneName = 'IsRael'
   const caminhoDaURL = 'https://placecats.com/millie_neo/300/200'
 
-  function sum(a,b) {
-    return a + b;
-  }
-
   return (
 
     // only one Parent // use className='' instead class=''
     <div className="App">
 
-      <p>Hello world!</p>
-      <span>in the React app</span>
-
         <div>
           <p> Using variables, my name is {oneName}</p>
-          <p> I can also doing some functions here, but that is not common to doing</p>
-          <p> The sum of 4 and 3 is: {sum(4,3)}</p>
           <img src={caminhoDaURL} alt='two cats being cuts' />
         </div>
 
-        <HelloWorld />
+        <div>
+          <PessoaSimples name="João"/>
+          <PessoaSimples name="Maria antônia"/>
+        </div>
+
+        <div>
+          <PessoaComplexa age="51" profission="teacher" name="Roberto" studant="Programação" url="https://placecats.com/neo_banana/300/200" />
+        </div>
+
 
     </div>
     
