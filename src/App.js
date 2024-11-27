@@ -1,4 +1,5 @@
 import './App.css';
+import HelloWorld from './components/HelloWorld.js'
 
 function App() {
 
@@ -27,6 +28,8 @@ function App() {
           <p> The sum of 4 and 3 is: {sum(4,3)}</p>
           <img src={caminhoDaURL} alt='two cats being cuts' />
         </div>
+
+        <HelloWorld />
 
     </div>
     
