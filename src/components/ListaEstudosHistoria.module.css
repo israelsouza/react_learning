@@ -1,0 +1,13 @@
+.li {
+    list-style-type: none;
+    padding: 10px 0;
+    background-color: #bababa;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.span{
+    margin: 5px 20px;
+    padding: 5px;
+    background-color: #ccc;
+}
