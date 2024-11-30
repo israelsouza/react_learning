@@ -45,3 +45,7 @@
 .form div{
   margin-top: 10px;
 }
+
+.form label{
+  padding: 0 15px;
+}
