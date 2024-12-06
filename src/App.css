@@ -42,3 +42,10 @@ body{
     transform: rotate(360deg);
   }
 }
+
+p{
+  width: 70%;
+  margin: 10px auto;
+  padding: 5px;
+  background-color: #a9abae;
+}
