@@ -1,6 +1,5 @@
 import './App.css';
-import Evento from './components/Evento.js';
-import Form from './components/form/formElements.js'
+import Condicao from './components/Condicional';
 
 
 function App() {
@@ -8,8 +7,8 @@ function App() {
   return (
 
     <div className="App">
-        <Form />
-        <Evento />
+        <h2>Renderização condicional</h2>
+        <Condicao />
     </div>
 
   );

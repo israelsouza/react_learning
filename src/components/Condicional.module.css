@@ -1,0 +1,33 @@
+form{
+    background-color: rgb(162, 162, 162);
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 50px 0;
+    border: 1px solid black;
+    border-radius: 16% 0 16% 0;
+}
+
+form > div{
+    margin: 0 auto;
+    width: 60%;
+}
+
+input[type=text],[type=email] {
+    width: 100%;
+    padding: 10px 0 10px 15px;
+    margin-bottom: 10px;
+}
+
+input[type=submit]{
+    margin-top: 50px;
+    width: 80%;
+    height: 40px;
+    border: none;
+    background-color: rgb(240, 240, 240);
+    transition: .5s;
+}
+
+input[type=submit]:hover{
+    background-color: rgb(196, 196, 196);
+    transition: .5s;
+}
