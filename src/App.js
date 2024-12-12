@@ -1,27 +1,22 @@
 import "./App.css";
-import Lista from "./components/Lista.js";
-import ListaComObjeto from "./components/ListaComObjeto.js";
+import { useState } from "react"
+
+import InserirNome from "./components/InserirNome.js";
+import SaudacaoNome from "./components/SaudacaoNome.js";
+
 
 function App() {
-  const grupoTecnologias = [
-    "bootstrap",
-    "react",
-    "css",
-  ];
 
-  const grupoObjetos = [
-    {tec: 'NodeJS', local: 'back-end'},
-    {tec: 'JS', local: 'front-end'},
-    {tec: 'Java', local: 'back-end'},
-    {tec: 'SQL', local: 'banco de dados'},
-  ]
+  const [nome, setNome] = useState()
+
 
   return (
     <div className="App">
-      <h2>Renderização de lista (com condicional também)</h2>
-      <Lista itens={grupoTecnologias} />
-      <ListaComObjeto itens={grupoObjetos} />
-      <ListaComObjeto itens={[]} />
+      <h1>Usando o State Lift</h1>
+
+      <SaudacaoNome nome={nome} />
+      <InserirNome setNome={setNome} />
+
     </div>
   );
 }
