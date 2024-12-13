@@ -1,0 +1,28 @@
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 4%;
+    background-color: aqua;
+}
+
+.cabecalho div img{
+    width: 200px;
+    height: auto;
+}
+
+.cabecalho ul{
+    display: flex;
+}
+
+.cabecalho ul li{
+    list-style: none;
+    padding: 10px 0px;
+    margin-right: 25px;
+}
+
+.cabecalho .tagLink{
+    text-decoration: none;
+    color: black;
+    font-size: 26px;
+}
